@@ -142,6 +142,33 @@ p , h2
     transform: scale(1.3);
 }
 
+/*seccion informacion*/
+.fondo-info {
+    background-color: #24303c;
+}
+
+.contenedores-informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contenedores-informacion p {
+    font-size: 15px;
+}
+.contenedores-informacion:nth-of-type(2) {
+    background-color: #334655;
+} 
+
+@media screen and (min-width: 992px) {
+    .contenedores-informacion {
+        flex-direction: row;
+    }
+}
+
+.contenedores-informacion img {
+    height: 200px;
+}
 /*banner*/
 
 #banner {
