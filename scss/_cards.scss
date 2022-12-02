@@ -1,0 +1,49 @@
+  /*cards*/
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .padre-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .padre-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .cards {
+    width: 25rem;
+    height: 25rem;
+    border: solid 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    img {
+      height: 15rem;
+      width: 12rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .boton {
+    margin-bottom: 1rem;
+  }
+  
+  .boton:hover {
+    transform: scale(1.3);
+  }
+  

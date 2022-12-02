@@ -1,0 +1,97 @@
+#grillas-info {
+    grid-area: productos;
+    h2 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 3rem;
+      margin-bottom: 10rem;
+      color: white;
+    }
+  }
+  p, h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+    /*seccion informacion*/
+    .fondo-info {
+        background-color: #24303c;
+      }
+      
+      .contenedores-informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      
+      .contenedores-informacion p {
+        font-size: 5rem;
+      }
+      
+      .contenedores-informacion:nth-of-type(2) {
+        background-color: #334655;
+      }
+      
+      @media screen and (min-width: 992px) {
+        .contenedores-informacion {
+          flex-direction: row;
+        }
+      }
+      .contenedores-informacion img {
+        height: 200px;
+      }
+      
+      /*banner*/
+      #banner {
+        grid-area: banner;
+        background-color: #eaeaea;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+      }
+
+      
+      .padre-banners {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+      }
+      
+      .banner-caracteristicas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h3 {
+          font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+      }
+      
+      @media screen and (max-width: 992px) {
+        .padre-banners {
+          grid-template-columns: repeat(2, 1fr);
+          margin-bottom: 2rem;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .padre-banners {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+      }

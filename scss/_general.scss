@@ -1,0 +1,50 @@
+html { /* 1rem = 10px */
+    font-size: 62.5%;
+  }
+  
+  /* reseteo de espacios a los lados y hacia adentro de las cajas */
+  * {
+    margin: 0;
+    padding: 0%;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+  
+  /* DESKTOP FIRST */
+  body {
+    font-family: $fuente-general;
+  }
+
+  #grilla-body {
+    @if $fiesta == padre {
+      background-color: blue; }
+      @else if $fiesta == navidad {
+        background-color: red;
+      }
+      @else if $fiesta == madre {
+        background-color: #eaeaea;
+      }
+      @else {
+        background-color: white;
+      }
+  }
+

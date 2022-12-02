@@ -1,0 +1,52 @@
+
+  
+  .logo {
+    @include sizes (10rem, 10rem);
+  }
+  
+  .logo:hover {
+    transform: scale(1.2);
+  }
+  
+  #grilla-body {
+    display: grid;
+    grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #grilla-header {
+    background-color: #005f6f;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #grilla-header {
+      flex-direction: column;
+    }
+  }
+  #flex-navegacion {
+    display: flex;
+    gap: 1rem;
+    li {
+      background-color: #1f53c5;
+      padding: 0.4rem;
+    }
+  }
+  
+  #flex-navegacion li:hover {
+    background-color: #239bae;
+  }
+  
+  @media screen and (max-width: 399px) {
+    #flex-navegacion {
+      flex-direction: column;
+    }
+  }
+  #grillas-productos {
+    grid-area: productos;
+  }
+  
